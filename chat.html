@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <meta name="color-scheme" content="dark light">
+        <title>
+            Messenger
+        </title>
+        <link rel="stylesheet" type="text/css" href="static/dash/css/main.css">
+        <link rel="stylesheet" type="text/css" href="static/dash/css/utilities.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    </head>
+    <body>
+        <style type="text/css">
+   .size-18{
+      font-size:18px ;
+   }
+   .size-16{
+      font-size:16px ;
+   }
+   .size-14{
+      font-size:14px ;
+   }
+   .size-12{
+      font-size:12px ;
+   }
+  .size-11{
+      font-size:11px ;
+   }
+   .text-lead{
+      color: #626262;
+   }
+</style>
+        <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+        <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg scrollbar" id="sidebar">
+            <div class="container-fluid">
+            <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-inline-block py-lg-2 mb-lg-5 px-lg-6 me-0" href="/">
+                <h3>
+                    Chats
+                </h3>
+            </a>
+            <div class="navbar-user d-lg-none">
+                <div class="dropdown">
+                    <a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-parent-child">
+                            <img alt="..." src="https://m.cyberinspects.net/media/home/dp/default_profile_picture.svg" class="avatar avatar- rounded-circle">
+                            <span class="avatar-child avatar-badge bg-success"></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+                        <a href="#" class="dropdown-item">
+                            Profile
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Settings
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Billing
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="sidebarCollapse">
+            <ul class="navbar-nav bg-white" style="height: 100vh;position: absolute;transition-property: background-color;">
+                <li class="nav-item">
+                    <a class="nav-link" style="padding-top: 1.334;padding-bottom: 0px;padding-top: 0px;">
+                        <div class="row">
+                        <div class="mx-1">
+                            <img class="rounded-circle mx-1 img-fluid" src="https://m.cyberinspects.net/media/home/dp/default_profile_picture.svg" style="height:40px;width: 40px;"/>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-dark size-18">
+                                Aamish
+                            </p>
+                            <p class="text-lead size-13">
+                                <span class="size-11 p-1 m-1 text-success bg-soft-success" style="border-radius: .35rem;">
+                                    New
+                                </span>
+                                Sure
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <hr class="navbar-divider my-1 opacity-70">
+                <li class="nav-item">
+                    <a class="nav-link" style="padding-top: 1.334;padding-bottom: 0px;padding-top: 0px;">
+                        <div class="row">
+                            <div class="mx-1">
+                                <img class="rounded-circle mx-1 img-fluid" src="https://m.cyberinspects.net/media/home/dp/default_profile_picture.svg" style="height:40px;width: 40px;"/>
+                            </div>
+                            <div class="p-1">
+                                <p class="text-dark size-18">
+                                    Muqeet
+                                </p>
+                                <p class="text-lead size-13">
+                                    Did you call him back?
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <hr class="navbar-divider my-1 opacity-70">
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding-top: 1.334;padding-bottom: 0px;padding-top: 0px;">
+                            <div class="row">
+                                <div class="mx-1">
+                                    <img class="rounded-circle mx-1 img-fluid" src="https://m.cyberinspects.net/media/home/dp/default_profile_picture.svg" style="height:40px;width: 40px;"/>
+                                </div>
+                                <div class="p-1">
+                                    <p class="text-dark size-18">
+                                        Cyber Society
+                                    </p>
+                                    <p class="text-lead size-13">
+                                        Uber under attack ...
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+            <nav class="navbar navbar-light position-lg-sticky top-lg-0 d-none d-lg-block overlap-10 flex-none bg-white border-bottom px-0 py-3" id="topbar">
+                <div class="container-fluid">
+                    <div class="hstack gap-2">
+                        <h4>
+                            Aamish
+                        </h4>
+                    </div>
+                    <div class="navbar-user d-none d-sm-block">
+                        <div class="hstack gap-3 ms-4">
+                            <div class="dropdown">
+                                <a class="d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                    <div>
+                                        <div class="avatar avatar-sm bg-primary rounded-circle border-primary text-white">
+                                            <img alt="..." src="/media/home/dp/default_profile_picture.svg">
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-block ms-md-2">
+                                        <i class="bi bi-chevron-down text-muted text-xs"></i>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div class="dropdown-header">
+                                        <span class="d-block text-sm text-muted mb-1">
+                                            Signed in as
+                                        </span>
+                                        <span class="d-block text-heading font-semibold">
+                                             
+                           Kaleemibnanwar
+                                        </span>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/settings/">
+                                        <i class="bi bi-gear me-3"></i>
+                                        Settings 
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/logout">
+                                        <i class="bi bi-person me-3"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main class="py-6">
+                <div class="container-fluid max-w-screen-xl px-2" >
+                    <div class="col-6">
+                        <div class="card mb-1">
+                            <div class="card-body p-3">
+                                <div class="d-flex align-items-center">
+                                    <p class="text-decoration-none">
+                                        Hello Sir, how are you doing today?
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row-reverse">
+                                    <p class="text-decoration-none size-14">
+                                        3:14PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="card mb-1">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex align-items-center">
+                                            <p class="text-decoration-none">
+                                                Hello Sir, how are you doing today?
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-row-reverse">
+                                            <p class="text-decoration-none size-14">
+                                                3:14PM
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="position:fixed;bottom: 8px;border-radius: 0px;">
+                    <div class="row d-flex">
+                        <div class="align-items-center" style="width:62px">
+                            <input type="file" id="image" hidden>
+                            <a for="image">
+                                <i class="fa fa-camera" style="font-size: 42px;" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col col-lg-8">
+                            <input type="text" class="form-control" style="border-radius: 2rem;" name="">
+                        </div>
+                        <div class="align-items-center" style="width:62px">
+                            <i class="fa fa-paper-plane" style="font-size: 42px;" for="image" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="static/dash/js/main.js"></script>
+    </body>
+</html>
